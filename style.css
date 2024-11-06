@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-col:rgb(172, 6, 6);
+    color: rgb(180, 6, 6);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navegação */
+nav {
+    background-color:black;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#sobre h2 {
+    color:red;
+    margin-bottom: 15px;
+}
+
+/* Cards de Produtos */
+#produtos {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color:rgba wheat;
+    border: 2px solid rgb(173, 5, 5);
+    border-radius: 20px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Seção Contato */
+#contato {
+    padding: 20px;
+}
+
+#contato button {
+    background-color: #25D366;
+    color: rgb(153, 7, 7);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#contato button:hover {
+    background-color: #128C7E;
+}
+
+/* Footer */
+footer {
+    background-color: #005b99;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
